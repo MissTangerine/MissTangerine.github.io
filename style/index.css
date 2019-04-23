@@ -1,0 +1,126 @@
+body{
+	background-image: url(../picture/backgr.jpg);
+	z-index: -1;
+	font-family: Sans-serif,"宋体";
+	display: flex;
+}
+
+.sidenav{
+	height: 100%;
+	width: 50px;  /* change to 200px*/
+	position:fixed;
+	z-index: 1;
+	overflow-x: hidden;
+	top: 0;
+	left: 0;
+	background-color: rgba(100,100,100,0.6);
+}
+
+#userAvaBox{
+	padding-top: 4px;
+	padding-left: 4px;
+}
+
+#userAvatar{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.container{
+	display: inline-block;
+	cursor: pointer;
+	padding-left: 1px;
+	padding-top: 4px; 
+}
+
+.bar1, .bar2, .bar3{
+	width: 35px;
+	height: 5px;
+	background-color: rgba(255,255,255,1);
+	margin: 6px;
+	transition: 0.3s;
+}
+
+.change .bar1{
+	-webkit-transform: rotate(-45deg) translate(-8px, 7px);
+	transform: rotate(-45deg) translate(-8px, 7px);
+}
+
+.change .bar2{
+	opacity: 0;
+}
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#conList{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 42px;
+	top: 50px;
+	display: none;
+}
+
+.conListForA:link, .conListForA:visited{
+	font-size: 20px;
+	font-family: "黑体";
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgba(255,255,255,1);
+	background-color: rgba(100,100,100,0.6);
+	padding: 10px;
+	width: 180px;	
+	display: block;
+}
+
+.conListForA:hover, .conListForA:active{
+	background-color: rgba(60,60,60,0.6);
+}
+
+#pagination{
+	position: fixed;
+	top: 50%;
+	right: 50px;
+	list-style-type: none;
+	display: block;		
+	padding: 0;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#pagination a{
+	display: block;
+	float: left;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 5px 12px;
+	color: rgba(255,255,255,1);
+	margin-left: -1px;
+	border: 1px solid transparent;
+	line-height: 1.5;
+}
+
+#pagination a.active{
+	cursor: default;
+	outline: none;
+}
+
+#unFinished{
+	position: fixed;
+	width: 400px;
+	height: 250px;
+	background-color: rgba(255,255,255,0.5);
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	box-shadow: 8px 8px 10px rgba(10,10,10,0.8);
+}
+
