@@ -1,4 +1,5 @@
 #unFinished{
+	z-index: 10;
 	position: fixed;
 	width: 400px;
 	height: 250px;
@@ -8,4 +9,6 @@
 	right: 0;
 	margin: 0 auto;
 	box-shadow: 8px 8px 10px rgba(10,10,10,0.8);
+	padding: 15px;
+	text-align: center;
 }
