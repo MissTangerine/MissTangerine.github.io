@@ -4,19 +4,21 @@
 	<meta charset="utf-8" />
 	<meta name="author" content="Tangerine" />
 	<title>Tangerine</title>
-	<link rel="stylesheet" type="text/css" href="style/index.css" />
+	<link rel="stylesheet" type="text/css" href="style/sidenav.css" />
+	<link rel="stylesheet" type="text/css" href="style/imgGallery.css" />
+	<link rel="stylesheet" type="text/css" href="style/paging.css" />
+	<link rel="stylesheet" type="text/css" href="style/unFinished.css" />
 	<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
-	<script type="text/javascript" src="script/index.js"></script>
+	<script type="text/javascript" src="script/sidenavmenu.js"></script>
 </head>
 <body>
 	<div class="sidenav">
-		<div id="userAvaBox"><img id="userAvatar" src="picture/userAvaEg.jpg" onclick="userInfo(this)"></div>
+		<div id="userAvaBox"><img id="userAvatar" src="img/userAvaEg.jpg" onclick="userInfo(this)"></div>
 		<div class="container" onclick="menuChange(this)">
 			<div class="bar1"></div>
 			<div class="bar2"></div>
 			<div class="bar3"></div>
 		</div>
-
 	</div>
 	<ul id="conList">
 		<li><a href="#" class="conListForA">LINK1</a></li>
@@ -27,7 +29,18 @@
 		<li><a href="#" class="conListForA">LINK6</a></li>		
 	</ul>
 
-	<div id="unFinished"><p>制作中...</p></div>
+	<div class="pageCenter">	
+		<div id="unFinished"><p>制作中...</p></div>   
+		
+		<div class="resImg">
+			<div class="img">
+				<img id="leimonn"src="img/leimonn.png">
+				<p>Description</p>
+			</div>
+		</div>
+	</div>
+
+
 
 	<ul id="pagination">
 		<li><a href="#" class="activePage">1</a></li>

@@ -1,0 +1,11 @@
+#unFinished{
+	position: fixed;
+	width: 400px;
+	height: 250px;
+	background-color: rgba(255,255,255,0.5);
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	box-shadow: 8px 8px 10px rgba(10,10,10,0.8);
+}

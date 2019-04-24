@@ -1,13 +1,14 @@
 body{
-	background-image: url(../picture/backgr.jpg);
-	z-index: -1;
+	background-image: url(../img/backgr.jpg);
+	background-repeat: no-repeat; 
+	background-size: 100% 100%;
 	font-family: Sans-serif,"宋体";
 	display: flex;
 }
 
 .sidenav{
 	height: 100%;
-	width: 50px;  /* change to 200px*/
+	width: 50px; 
 	position:fixed;
 	z-index: 1;
 	overflow-x: hidden;
@@ -84,43 +85,4 @@ body{
 	background-color: rgba(60,60,60,0.6);
 }
 
-#pagination{
-	position: fixed;
-	top: 50%;
-	right: 50px;
-	list-style-type: none;
-	display: block;		
-	padding: 0;
-	margin-top: 10px;
-	text-align: center;
-}
-
-#pagination a{
-	display: block;
-	float: left;
-	font-size: 14px;
-	text-decoration: none;
-	padding: 5px 12px;
-	color: rgba(255,255,255,1);
-	margin-left: -1px;
-	border: 1px solid transparent;
-	line-height: 1.5;
-}
-
-#pagination a.active{
-	cursor: default;
-	outline: none;
-}
-
-#unFinished{
-	position: fixed;
-	width: 400px;
-	height: 250px;
-	background-color: rgba(255,255,255,0.5);
-	top: 20%;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	box-shadow: 8px 8px 10px rgba(10,10,10,0.8);
-}
 
