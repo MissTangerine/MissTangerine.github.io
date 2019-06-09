@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<meta name="author" content="Tangerine" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tangerine</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/body.css" />
 	<link rel="stylesheet" type="text/css" href="../style/sidenav.css" />
-	<link rel="stylesheet" type="text/css" href="style/ToDoList.css" />
-	<script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
-	<script type="text/javascript" src="../script/sidenavmenu.css"></script>
+	<link rel="stylesheet" type="text/css" href="style/toDoList.css" />
 </head>
 <body>
 	<div class="sidenav">
-		<div id="userAvaBox"><img id="userAvatar" src="img/userAvaEg.jpg" onclick="userInfo(this)"></div>
+		<div id="userAvaBox"><img id="userAvatar" src="../img/userAvaEg.jpg"></div>
 		<div class="container" onclick="menuChange(this)">
 			<div class="bar1"></div>
 			<div class="bar2"></div>
@@ -20,21 +20,26 @@
 		</div>
 	</div>
 	<ul id="conList">
-		<li><a href="PerInf/index.html" class="conListForA">Personal Information</a></li>
-		<li class="conListForA"> ——————————————————</li>
+		<li><a href="" class="conListForA">Personal Information</a></li>
+		<li class="conListForA"> ————————————————</li>
 		<li><a href="#" class="conListForA">LINK2</a></li>
 		<li><a href="#" class="conListForA">LINK3</a></li>
 		<li><a href="#" class="conListForA">LINK4</a></li>
 		<li><a href="#" class="conListForA">To Do List</a></li>
-		<li><a href="" class="conListForA">Return</a></li>		
+		<li><a href="../index.html" class="conListForA">Return</a></li>		
 	</ul>
-	<div id="myDIV" class="header">
-		<h2 style="margin: 5px">To Do List</h2>
-		<input type="text" id="myInput" placeholder="Title...">
-		<span onclick="newElement()" class="addBtn">Add</span>
+	<div class="toDoList">
+		<div class="title">
+			<p>To Do List</p>
+			<input type="text" class="myInput" placeholder="Title...">
+			<span onclick="newElement()" class="addBtn">Add</span>
+		</div>
+		<ul class="table table-striped table-hover"></ul>
 	</div>
-	<ul id="myUL"></ul>
 
-	<script type="text/javascript" src="script/ToDoList.js"></script>
+	<script src="../jquery-3.4.0.min.js"></script>	
+	<script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+	<script src="../script/sidenavmenu.js"></script>
+	<script src="script/toDoList.js"></script>
 </body>
 </html>

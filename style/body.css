@@ -1,5 +1,5 @@
 body{
-	background-image: url(../img/backgr.jpg);
+/*	background-image: url(../img/backgr.jpg);
 	position:fixed;
 	top: 0;
 	left: 0;
@@ -11,6 +11,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-position: center 0;
+	-o-background-size: cover; 
+	background-position: center 0;  */
+	background-color: white;
 }
