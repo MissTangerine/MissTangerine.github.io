@@ -1,4 +1,4 @@
-ul {
+#oneList {
 	margin: 0;
 	padding: 0;
 	padding-left: 5px;
@@ -6,7 +6,7 @@ ul {
 	list-style-type: none;
 }
 
-ul li {
+#oneList li {
 	cursor: pointer;
 	position: relative;
 	padding: 12px 8px 12px 40px;
@@ -21,21 +21,24 @@ ul li {
 	user-select: none;
 }
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+#oneList li:nth-child(odd) {
 	background: rgba(100,100,100,0.8);
 }
 /* Darker background-color on hover */
-ul li:hover {
+#oneList li:hover {
 	background: rgba(0,0,0,0.3);
 }
+
+#oneList li:
+
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+#oneList li.checked {
 	background: rgba(110,110,110,0.8);
 	color: rgba(150,150,150,0.7);
 	text-decoration: line-through;
 }
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+#oneList li.checked::before {
 	content: '';
 	position: absolute;
 	border-color: rgba(150,150,150,0.7);
@@ -48,13 +51,13 @@ ul li.checked::before {
 	width: 7px;
 }
 
-.close {
+#oneList .close {
 	position: absolute;
 	right: 0;
 	top: 0;
 	padding: 14px 18px 14px 18px;
 }
-.close:hover {
+#oneList .close:hover {
 	background-color: rgba(100,100,100,1);
 	color: white;
 }
