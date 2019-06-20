@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/body.css" />
 	<link rel="stylesheet" type="text/css" href="../style/sidenav.css" />
+	<link rel="stylesheet" type="text/css" href="style/drawBoard.css" />
+	<link rel="stylesheet" type="text/css" href="style/clear.css" />
 
 </head>
 <body>
@@ -31,8 +33,19 @@
 	<!--	<li><a href="" class="conListForA">Return</a></li>		-->
 	</ul>
 
+	<div class="draw">
+		<canvas id="canv" width="390px" height="390px">
+        	<span>Sorry, the browser does not support canvas content.</span>
+    	</canvas>
+		<button id="Cancel" onclick="clearCanvas()">Clear</button>
+	</div>
+	<script>
+		clearCanvas();
+	</script>
 	<script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
 	<script type="text/javascript" src="../script/sidenavmenu.js"></script>
 	<script type="text/javascript" src="../script/canvas.js"></script>
+	<script type="text/javascript" src="script/clearCanvas.js"></script>
+	<script type="text/javascript" src="script/write.js"></script>
 </body>
 </html>
