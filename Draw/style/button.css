@@ -1,0 +1,25 @@
+#Cancel{
+	padding: 15px 70px;
+}
+#Done{
+	padding: 15px 70px;
+}
+
+
+.button{
+	background-color: rgba(0,0,0,0.9);
+	border: 1px solid gray;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;	
+	font-family: 'Microsoft JhengHei UI Light';
+	cursor: pointer;
+	float: left;
+
+}
+
+.button:hover{
+	background-color: rgba(50,50,50,0.9);
+}
