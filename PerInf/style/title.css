@@ -1,0 +1,30 @@
+.title{
+	list-style-type: none;
+    margin: 0;
+    padding: 15px 30px 0;
+    overflow: hidden;
+}
+
+.title li{
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+.title #t5{
+	float: right;
+
+}
+
+.title li:hover{
+	background-color: rgba(255,255,255,0.8);
+}
+
+.change{
+	background-color: white;
+	color: black;
+}

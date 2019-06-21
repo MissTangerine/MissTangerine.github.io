@@ -1,0 +1,11 @@
+.PerInf{
+	position: relative;
+	margin: 10px;
+	margin-left: 60px;
+	height: 100%;
+	width: auto;
+
+	font-family: "微软雅黑";
+	color: white;
+	background-color: rgba(80,80,80,0.85);
+}
