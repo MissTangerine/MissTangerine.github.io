@@ -24,7 +24,6 @@ $(window).resize(resizeCanvas);
 function resizeCanvas() {
     $("#canv").attr("width", $(window).get(0).innerWidth);
     $("#canv").attr("height", $(window).get(0).innerHeight);
-    ctx.fillRect(0, 0, myCanvas.width, myCanvas.height);
 };
 
 resizeCanvas();
